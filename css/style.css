@@ -1,0 +1,319 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1,
+h2 {
+    font-family:"segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+    text-align: center;
+    background-color: #8c4646;
+ 
+}
+
+p {  font-family: "segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+    font-weight:bolder;
+    font-style:oblique;
+}
+
+a {
+    text-decoration:solid;
+    text-transform: uppercase;
+}
+
+body {
+
+    background-color:#FFD7D7;
+}
+
+.salon_belleza{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+
+.mujer_maquillada{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+
+.muejeres_maquilladas{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-videos{
+    display: flex;
+    justify-content: center;
+}
+
+/* html de Nosotros*/
+.contenedor-imagen{
+    width: 100%;
+    height: 500px;
+    display: flex;
+
+}
+
+.cama_trabajo, .utensilios_trabajo {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    margin: 50px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+
+/* HTML skincare */
+
+
+.contenedor-skincare{ 
+    width: 250px;
+    height: 250px;
+    display: flex;
+    padding: 10px;
+    
+    
+}
+
+.crema_skincare{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto;
+}
+    
+.crema-facial{ 
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto;
+}
+    
+.crema-hidratante{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto;
+}
+    
+.crema{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto;
+}
+    
+.serum {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto; 
+}
+    
+.serum-reparador { 
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto; 
+}
+    
+.serum-hidrantante {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto; 
+} 
+    
+    .serum-facial { 
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto; 
+}
+    
+.box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 200px;
+    max-width: 100% ;
+
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.box div{
+    z-index: 3;
+  
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    place-items: end star;
+
+
+}
+
+.b1{  
+    grid-area: a1 ;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    gap: 5px;
+}
+
+.b2{
+   grid-area: a2 ;
+   flex-direction: column;
+   text-align: justify;
+   padding: 10px;
+   gap: 5px;
+}
+
+.b3{
+    grid-area: a3 ;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    gap: 5px;
+}
+
+.b4{
+    grid-area: a4 ;
+    flex-direction: column;
+}
+
+.b5 {
+    grid-area: a5 ;
+    flex-direction: column;
+
+}
+
+.b6{
+    grid-area: a6 ;
+    flex-direction: column;
+}
+
+.b7{
+    grid-area: a7 ;
+    flex-direction: column;
+}
+
+.b8{
+    grid-area: a8 ;
+    flex-direction: column; 
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    grid-template-rows: repeat(4 300px);
+    gap: 10px;
+    grid-template-areas: 
+    "a1 a2 a3 a4"
+    "a5 a6 a7 a8 "
+}   
+
+
+/*  responsive*/ 
+@media (max-width: 840px){
+    .box{ 
+        background-color: bisque;
+        color: #111;
+
+    }
+}
+
+
+@media (max-width: 768px){
+    .grid{
+        grid-template-areas:  
+        "a8 a7 a3 a6"
+        "a5 a4 a2 a1 ";
+    }
+}
+
+/*  pseudoclases  */ 
+
+a:hover{
+    background-color:black
+
+}
+
+nav  a:hover{
+    background-color:#8c4646
+
+}
+
+/*  pseudoclase al html de nosotros */ 
+.nosotros:hover{ 
+    font-family: "segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    box-shadow: 3px 3px 3px 5px #111;
+}
+
+/*  pseudoclase al html de skincare */ 
+.prueba:hover{ 
+    font-family: "segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    box-shadow: 3px 3px 3px 5px #111;
+}
+
+
+.btn-primary {
+    background-color: #8c4646 ;
+}
+
+.card-img-top{ 
+    border-radius: 0;
+    border: none;
+
+
+}
