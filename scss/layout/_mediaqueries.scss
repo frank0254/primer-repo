@@ -1,0 +1,64 @@
+
+/*  responsive*/ 
+@media (max-width: 840px){
+    .box{ 
+        background-color: bisque;
+        color: #111;
+
+    }
+}
+
+
+@media (max-width: 768px){
+    .grid{
+        grid-template-areas:  
+        "a8 a7 a3 a6"
+        "a5 a4 a2 a1 ";
+    }
+}
+
+/*  pseudoclases  */ 
+
+a:hover{
+    background-color:black
+
+}
+
+
+/*  pseudoclase al html de nosotros */ 
+.nosotros:hover{ 
+    font-family: "segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    box-shadow: 3px 3px 3px 5px #111;
+}
+
+/*  pseudoclase al html de skincare */ 
+.prueba:hover{ 
+    font-family: "segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    box-shadow: 3px 3px 3px 5px #111;
+}
+
+
+.btn-primary {
+    background-color: $maincolor ;
+}
+
+.card-img-top{ 
+    border-radius: 0;
+    border: none;
+
+
+}

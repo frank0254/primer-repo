@@ -1,0 +1,215 @@
+.mi-boton {
+    background-color: #e9a6a6 ; 
+    border: black; 
+    color: black; 
+    padding: 5px; 
+    text-align: center; 
+    text-decoration: black; 
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.1s; 
+    &:hover {
+        transform: scale(1.1);
+        
+    }
+}
+
+.lista {
+
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 2rem;
+    background: linear-gradient(125deg,#ffffff00, #e9a6a6);
+    padding: 10px;
+    text-align: center; 
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 40%;
+    transition: background-size 0.40s;
+    &:hover {
+        background-size: 100% 40%;
+    }
+
+    
+}
+
+
+
+
+.contenedor-skincare{ 
+    width: 250px;
+    height: 250px;
+    display: flex;
+    padding: 10px;
+
+    img {
+        margin: 5px; 
+    }
+}
+
+.crema_skincare{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto;  
+    padding: 10px;
+      
+}
+    
+.crema-facial{ 
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto;
+    padding: 10px;
+    
+}
+    
+.crema-hidratante{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto;
+    padding: 10px;
+    
+}
+    
+.crema{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto;
+    padding: 10px;
+    
+}
+    
+.serum {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto; 
+    padding: 10px;
+    
+}
+    
+.serum-reparador { 
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto; 
+    padding: 10px;
+    
+}
+    
+.serum-hidrantante {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto; 
+    padding: 10px;
+    
+} 
+    
+    .serum-facial { 
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin:auto; 
+    padding: 10px;
+    
+}
+    
+.box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 200px;
+    max-width: 100% ;
+
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.box div{
+    z-index: 3;
+  
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    place-items: end star;
+
+
+}
+
+.b1{  
+    grid-area: a1 ;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    gap: 5px;
+}
+
+.b2{
+   grid-area: a2 ;
+   flex-direction: column;
+   text-align: justify;
+   padding: 10px;
+   gap: 5px;
+}
+
+.b3{
+    grid-area: a3 ;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    gap: 5px;
+}
+
+.b4{
+    grid-area: a4 ;
+    flex-direction: column;
+}
+
+.b5 {
+    grid-area: a5 ;
+    flex-direction: column;
+
+}
+
+.b6{
+    grid-area: a6 ;
+    flex-direction: column;
+}
+
+.b7{
+    grid-area: a7 ;
+    flex-direction: column;
+}
+
+.b8{
+    grid-area: a8 ;
+    flex-direction: column; 
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr );
+    grid-template-rows: repeat(4 300px);
+    gap: 10px;
+    grid-template-areas: 
+    "a1 a2 a3 a4"
+    "a5 a6 a7 a8 "
+}   
+

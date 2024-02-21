@@ -1,0 +1,50 @@
+
+.carousel-container {
+    width: 700px; // Ajusta esto a la anchura que prefieras
+    margin-left: auto; // Esto centra el carrusel horizontalmente
+  
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 700px; // Esto hace que las imágenes ocupen todo el ancho del contenedor
+          height: 450px; // Esto mantiene la proporción de las imágenes
+        }
+      }
+    }
+  }
+
+  .contenedor-video {
+  width: 450px; // Asegúrate de que este valor sea el mismo que el del carrusel
+  float: left; // Esto alinea el video a la derecha
+
+  video {
+    width: 700px; // Esto hace que el video ocupe todo el ancho del contenedor
+    height: 450px; // Esto mantiene la proporción del video
+  }
+}
+
+.contenedor-eyelash {
+    .contenedor-video-corto {
+      width: 450px; // Asegúrate de que este valor sea el mismo que el del carrusel
+      float: left; // Esto alinea el video a la derecha
+  
+      video {
+        width: 700px; // Esto hace que el video ocupe todo el ancho del contenedor
+        height: 450px; // Esto mantiene la proporción del video
+      }
+    }
+  }
+  
+  #carouselExampleFade {
+    width:700px; // Ajusta esto a la anchura que prefieras
+    margin-left: auto; // Esto centra el carrusel horizontalmente
+  
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 450px; // Esto hace que las imágenes ocupen todo el ancho del contenedor
+          height: 450px; // Esto mantiene la proporción de las imágenes
+        }
+      }
+    }
+  }

@@ -1,0 +1,74 @@
+
+body {
+
+    background-color:#e9a6a6;
+
+    h1,
+    h2 {
+    font-family:"segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+    text-align: center;
+    background-color: $maincolor;
+ 
+    }
+    
+    p {  font-family: "segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+    font-weight:bolder;
+    font-style:oblique;
+    }
+
+    a {
+    text-decoration:solid;
+    text-transform: uppercase;
+    }
+}
+
+.contenedor-imagen{
+    width: 100%;
+    height: 500px;
+    display: flex;
+ 
+
+}
+
+.cama_trabajo, .utensilios_trabajo {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    margin: 50px;
+    transition: transform 1s;
+    &:hover {
+        transform: rotatey(360deg);
+    }
+}
+
+.fa {
+    padding: 20px;
+    font-size: 15px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+// condicionales con color de fondo solo tiene nosotros  intente hacerlo responsive //
+
+$color-mobile: #FF0000; //  para móviles
+$color-laptop: #00FF00; //  para laptops
+$color-desktop:#e9a6a6; //  para computadoras de escritorio
+
+body {
+  background-color: $color-mobile;
+
+  // Cuando la pantalla es al menos 768px 
+  @media (min-width: 768px) {
+    background-color: if($color-laptop != null, $color-laptop, $color-mobile);
+  }
+
+  // Cuando la pantalla es al menos 1024px 
+  @media (min-width: 1024px) {
+    background-color: if($color-desktop != null, $color-desktop, $color-laptop);
+  }
+}
+

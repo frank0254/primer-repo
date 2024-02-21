@@ -1,0 +1,82 @@
+
+
+body {
+
+    background: linear-gradient(45deg,#ffffff45, #e9a6a6);
+
+    h1,
+    h2 {
+    font-family:"segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+    text-align: center;
+    background-color: $maincolor;
+    background: linear-gradient(to right,#ffffffab, #f27171);
+    }
+
+
+
+    a {
+    text-decoration:solid;
+    text-transform: uppercase;
+    }
+
+
+    .contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+  
+
+
+        .salon_belleza{
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin: auto;
+        }
+
+        .mujer_maquillada{
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin: auto;
+        }
+
+        .muejeres_maquilladas{
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin: auto;
+        }
+    }
+
+    
+    .contenedor-videos{
+    display: flex;
+    justify-content: center;
+    }
+
+}
+
+.elemento {  font-family: "segoe UI", tahoma, Geneva, Verdana,
+    sans-serif;
+
+    padding: 10px;
+    background: linear-gradient(45deg,#ffffff45, #e9a6a6);
+    animation-name: Cambiocolor;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function:linear;
+     
+    }
+
+@keyframes Cambiocolor {
+    0% {
+       opacity: 0;
+       transform: translate(100%, 100%);
+    }
+
+    100%{
+       opacity: 1;
+    }
+        
+}
