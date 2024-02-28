@@ -1,49 +1,49 @@
 
 .carousel-container {
-    width: 700px; // Ajusta esto a la anchura que prefieras
-    margin-left: auto; // Esto centra el carrusel horizontalmente
+    width: 700px; 
+    margin-left: auto; 
   
     .carousel-inner {
       .carousel-item {
         img {
-          width: 700px; // Esto hace que las imágenes ocupen todo el ancho del contenedor
-          height: 450px; // Esto mantiene la proporción de las imágenes
+          width: 700px; 
+          height: 450px; 
         }
       }
     }
   }
 
   .contenedor-video {
-  width: 450px; // Asegúrate de que este valor sea el mismo que el del carrusel
-  float: left; // Esto alinea el video a la derecha
+  width: 450px; 
+  float: left; 
 
   video {
-    width: 700px; // Esto hace que el video ocupe todo el ancho del contenedor
-    height: 450px; // Esto mantiene la proporción del video
+    width: 700px; 
+    height: 450px; 
   }
 }
 
 .contenedor-eyelash {
     .contenedor-video-corto {
-      width: 450px; // Asegúrate de que este valor sea el mismo que el del carrusel
-      float: left; // Esto alinea el video a la derecha
+      width: 450px; 
+      float: left; 
   
       video {
-        width: 700px; // Esto hace que el video ocupe todo el ancho del contenedor
-        height: 450px; // Esto mantiene la proporción del video
+        width: 700px; 
+        height: 450px; 
       }
     }
   }
   
   #carouselExampleFade {
-    width:700px; // Ajusta esto a la anchura que prefieras
-    margin-left: auto; // Esto centra el carrusel horizontalmente
+    width:700px; 
+    margin-left: auto; 
   
     .carousel-inner {
       .carousel-item {
         img {
-          width: 450px; // Esto hace que las imágenes ocupen todo el ancho del contenedor
-          height: 450px; // Esto mantiene la proporción de las imágenes
+          width: 450px; 
+          height: 450px; 
         }
       }
     }
