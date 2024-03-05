@@ -62,48 +62,46 @@ a:hover{
 
 
 }
-
-
-/* Estilos para telefonos */
-@media (max-width: 460px) {
-
-    .contenedor-imagenes  {
-        max-width: 100%;
-        height: auto;
-      }
-
-    h1, h2, p {
-        font-size: 1.5rem; 
-      }
-  }
-
-    .contenedor-imagen {
+/* Media query para telefonos */
+@media (min-width: 460px) {
+  .contenedor-imagenes img {
     max-width: 100%;
     height: auto;
   }
-
-    h1, h2, p {
-    font-size: 1.5rem; 
+  h1, h2, p {
+    font-size: 1.5rem;
   }
-  
-
-  /* Estilos para tablet */
-  @media (min-width: 769px) and (max-width: 1024px) {
-
-    h1, h2, p {
-        font-size: 1.5rem; 
-      }
-      /* aplicar mas estilos  */
+  .carousel .carousel-item {
+    max-height:550px;
   }
 
+  .carousel-item img {
+    object-fit:contain;
+    max-height:550px;
+  }
 
+}
+
+
+/* Media query para tabletas */
+@media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas para tabletas */
+    }
   
-  /* Estilos para computadoras de escritorio */
-  @media (min-width: 1025px) {
-
-    h1, h2, p {
-        font-size: 1.5rem; 
-      }
-/* aplicar mas estilos  */
-
+    .contenedor-skincare {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas medianas */
+    }
+  
+  }
+  
+  /* Media query para escritorio */
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(4, 1fr); /* 4 columnas para escritorio */
+    }
+  
+    .contenedor-skincare {
+      grid-template-columns: repeat(5, 1fr); /* 4 columnas para pantallas extra grandes */
+    }
   }
